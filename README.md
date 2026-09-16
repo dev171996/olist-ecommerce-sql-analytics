@@ -48,14 +48,14 @@ For one order used in my validation:
 - Average delivered order value: 159.83
 - Delivered orders with item data: 96,478
 - Delivered orders with payment data: 96,477
-- Delivered exact-match orders within the selected tolerance: 96,178
+- Delivered orders reconciled within ±0.01 tolerance: 96,178
 - Delivered orders on time: 88,644
 - Delivered orders late: 7,826
 - Delivered orders missing actual delivery timestamp: 8
 - 610 products were missing the same descriptive metadata block
 - 2 products were missing all four physical measurements
 - 383 item rows had zero freight value
-- The order-level reconciliation view contains 98,362 exact matches, 303 mismatches, 775 orders missing item data and 1 order missing payment data
+- The order-level reconciliation view contains 98,362 orders reconciled within ±0.01 tolerance, 303 mismatches, 775 orders missing item data and 1 order missing payment data
 
 ## Important metric decisions
 
