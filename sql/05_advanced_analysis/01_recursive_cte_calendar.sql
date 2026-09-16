@@ -1,8 +1,9 @@
 -- Continuous monthly calendar. This keeps calendar months that are absent from the source result.
 WITH RECURSIVE date_range AS
 (
-    SELECT DATE_TRUNC('month',MIN(order_purchase_timestamp))::DATE AS first_month,
-           DATE_TRUNC('month',MAX(order_purchase_timestamp))::DATE AS last_month
+    SELECT
+        DATE_TRUNC('month', MIN(order_purchase_timestamp))::DATE AS first_month,
+        DATE_TRUNC('month', MAX(order_purchase_timestamp))::DATE AS last_month
     FROM raw.orders
 ),
 month_calendar AS
